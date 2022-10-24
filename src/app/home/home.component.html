@@ -1,0 +1,37 @@
+<br>{{a}}<br>
+{{b}}<br>
+{{d}}<br>
+
+<!--<input type="text" [(ngModel)]="name"><br> -->
+<input type="button" value="print value from text box" (click)="printdata($event)">
+
+<br>
+constructor : Document.GetElementById Test:
+<input type="text" id="doctest"><br>
+
+<span *ngIf="status else condition1">condition is true</span>
+<ng-template #condition1>condition value is false</ng-template><br>
+
+{{mobiles[0]}}<br>
+{{mobiles[1]}}<br>
+{{mobiles[2]}}<br>
+
+for loop data : <br>
+<div *ngFor="let mobile of mobiles">{{mobile}}</div>
+<br>
+
+upper case : {{name1 | uppercase}}
+<br>
+lower case : {{name2 | lowercase}}
+<br>
+currency: {{money | currency:'USD'}}
+<br>
+date: {{todaydate}}
+<br>
+shortdate Date :{{todaydate | date:'d/m/y'}}
+<br>
+short Time :{{todaydate | date:'shortTime'}} 
+<br>
+percent : {{perfomance | percent }}
+<br>
+<input type="button" (click)="printdate()" value="name">
